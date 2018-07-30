@@ -1,11 +1,12 @@
 'use strict';
+
 var app = app || {};
 
 (function(module) {
 
   const homeView = {};
 
-  homeView.initCreateFormPage = () => {
+  homeView.initHomePage = () => {
     app.showOnly('.home-view');
 
     $('#username-form').on('submit', (event) => {

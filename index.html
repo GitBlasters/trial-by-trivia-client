@@ -2,13 +2,13 @@
 <html>
   <head>
     <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Trial by Trivia</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="stylesheet" href="styles/modules.css">
-
+  
+    <title>Trial by Trivia</title>
     <!-- Brandon: Handlebar Templates-->
     <script type="text/x-handlebars-template" id="error-template">
       <h3> Oops, something went wrong.</h3>
@@ -24,7 +24,14 @@
   </head>
   <body>
     <header>
-
+      <nav>
+        <!-- TODO -->
+        <ul>
+          <li>Home</li>
+          <li>Scoreboard</li>
+          <li>About</li>          
+        </ul>
+      </nav>
     </header>
 
     <main>
@@ -33,7 +40,7 @@
         <section id="error-message"></section>
       </section>
 
-      <section class="question-view container">
+      <section class="quiz-view container">
 
       </section>
 
@@ -42,25 +49,23 @@
       </section>
 
       <section class="home-view container">
-          <h2 class="view-title">Please enter your name.</h2>
-          <form id="username-form">
-            <input type="text" name="username" placeholder="Max 15 chars">
-            <button type="submit">Quiz Me!</button>
-          </form>
-        
+        <h2 class="view-title">Please enter your name.</h2>
+        <form id="username-form">
+          <input type="text" name="username" placeholder="Max 15 chars">
+          <button type="submit">Quiz Me!</button>
+        </form>
+
       </section>
 
       <section class="about-view container">
-        
         <img class="codeblasters" id="matthew">
-        <p></p>
+          <p></p>
         <img class="codeblasters" id="tom">
-        <p></p>
+          <p></p>
         <img class="codeblasters" id="brandon">
-        <p></p>
+          <p></p>
         <img class="codeblasters" id="andy">
-        <p></p>
-        
+          <p></p>
       </section>
       
     </main>
@@ -70,20 +75,20 @@
 
     </footer>
 
-  <!-- Tom: CDN scripts -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <!-- Tom: CDN scripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
 
-  <!-- Tom: Client JS scripts -->
-  <script src="/scripts/models/index.js"></script>
-  <script src="/scripts/models/user.js"></script>
-  <script src="/scripts/models/question.js"></script>
-  <script src="/scripts/views/home-view.js"></script>
-  <script src="/scripts/views/about-view.js"></script>
-  <script src="/scripts/views/question-views.js"></script>
-  <script src="/scripts/views/scoreboard-view.js"></script>
-  <script src="/scripts/views/error-view.js"></script>
-  <script src="/scripts/views/routes.js"></script>
+    <!-- Tom: Client JS scripts -->
+    <script src="/scripts/models/index.js"></script>
+    <script src="/scripts/models/user.js"></script>
+    <script src="/scripts/models/question.js"></script>
+    <script src="/scripts/views/home-view.js"></script>
+    <script src="/scripts/views/about-view.js"></script>
+    <script src="/scripts/views/question-views.js"></script>
+    <script src="/scripts/views/scoreboard-view.js"></script>
+    <script src="/scripts/views/error-view.js"></script>
+    <script src="/scripts/views/routes.js"></script>
   </body>
 </html>
