@@ -12,6 +12,7 @@ var app = app || {};
     $('#username-form').on('submit', (event) => {
       event.preventDefault();
 
+
       let userData = {
         title: event.target.username.value,
         score: 0,
