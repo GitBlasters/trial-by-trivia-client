@@ -27,9 +27,9 @@
       <nav>
         <!-- TODO -->
         <ul>
-          <li>Home</li>
-          <li>Scoreboard</li>
-          <li>About</li>          
+          <li><a href="/">Home</a></li>
+          <li><a href="/quiz/scoreboard">Scoreboard</a></li>
+          <li><a href="/about">About</a></li>          
         </ul>
       </nav>
     </header>
@@ -41,23 +41,23 @@
       </section>
 
       <section class="quiz-view container">
-
+        quiz view container
       </section>
 
       <section class="scoreboard-view container">
-        
+        scoreboard view container
       </section>
 
       <section class="home-view container">
         <h2 class="view-title">Please enter your name.</h2>
         <form id="username-form">
-          <input type="text" name="username" placeholder="Max 15 chars">
+          <input type="text" name="username" placeholder="Max 15 chars" required>
           <button type="submit">Quiz Me!</button>
         </form>
-
       </section>
 
       <section class="about-view container">
+        about view container
         <img class="codeblasters" id="matthew">
           <p></p>
         <img class="codeblasters" id="tom">

@@ -12,12 +12,8 @@ var app = app || {};
     $('#username-form').on('submit', (event) => {
       event.preventDefault();
 
-      let userData = {
-        title: event.target.username.value,
-        score: 0,
-      };
 
-      module.User.create(userData);
+      module.User.create(event.target.username.value);
     })
   }
   module.homeView = homeView;
