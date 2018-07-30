@@ -13,7 +13,12 @@ var app = app || {};
       event.preventDefault();
 
 
-      module.User.create(event.target.username.value);
+      let userData = {
+        title: event.target.username.value,
+        score: 0,
+      };
+
+      module.User.create(userData);
     })
   }
   module.homeView = homeView;
