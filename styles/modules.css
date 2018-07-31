@@ -1,11 +1,13 @@
 h1 {
   font-family: 'Pirata One', cursive;
-  font-size: 60px;
   color: #8C0004;
   text-align: center;
   margin: 0 auto;
   padding: 10px;
-  opacity: 1;
+}
+
+h1 a {
+  font-size: 60px;
 }
 
 nav {
@@ -32,4 +34,39 @@ a:link {
 
 a:visited {
   color: #C8000A;
+}
+
+section.quiz-view h2 {
+  height: 20%;
+  line-height: 83.99px;
+  background-color: #E2C499;
+  border: 2px solid #8C0004;
+  box-sizing: border-box;
+}
+
+section.quiz-view ul {
+  height: 80%;
+  border-left: 2px solid #C8000A;
+  border-bottom: 2px solid #C8000A;
+  border-right: 2px solid #C8000A;
+  box-sizing: border-box;
+  background-color: rgba(0.3, 0.3, 0.3, .3);
+}
+
+section.quiz-view li {
+  height: 25%;
+  line-height: 118.5px;
+  box-sizing: border-box;
+  color: #E2C499;
+  border-bottom: 2px solid #C8000A;
+  font-size: 25px;
+  text-shadow:
+		-0.5px -0.5px 0 #8C0004,
+		0.5px -0.5px 0 #8C0004,
+		-0.5px 0.5px 0 #8C0004,
+		0.5px 0.5px 0 #8C0004;
+}
+
+section.quiz-view li:last-of-type {
+  border: none;
 }
