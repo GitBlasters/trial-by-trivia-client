@@ -60,29 +60,73 @@
           <p> quiz display not working</p>
       </section>
 
-      <section class="scoreboard-view container">
-        scoreboard view container
-      </section>
-
       <section class="home-view container">
-        <h2 class="view-title">Please enter your name.</h2>
-        <form id="username-form">
-          <input type="text" name="username" placeholder="Max 15 chars" required>
-
-          <button type="submit">Quiz Me!</button>
+        <h2 class="view-title">Choose your Trial</h2>
+        <form id="trial-options">
+          <section>
+            <label for="category">Trial Topic</label>
+            <select name="question-category" id="type-of-questions" required>
+              <option value="any">All Categories</option>
+              <option value="9">General</option>
+              <option value="10">Books</option>
+              <option value="11">Film</option>
+              <option value="12">Music</option>
+              <option value="14">Television</option>
+              <option value="15">Video Games</option>   
+              <option value="17">Science and Nature</option>
+              <option value="18">Computers</option>
+              <option value="20">Mythology</option>
+              <option value="21">Sports</option>
+              <option value="22">Geography</option>
+              <option value="23">History</option>
+              <option value="24">Politics</option>
+              <option value="26">Celebrities</option>
+              <option value="27">Animals</option>
+              <option value="28">Vehicles</option>
+            </select>
+          </section>
+          <section>
+            <label for="difficulty">Difficulty</label>
+            <select name="question-difficulty" id="difficulty-of-questions" required>
+              <option value="any">Let the gods Decide</option>
+              <option value="easy">Tough</option>
+              <option value="medium">Grueling</option>
+              <option value="hard">INSANE</option>
+            </select>
+          </section>
+          <section>
+            <input type="text" name="username" placeholder="Max 15 chars" required>
+            <button type="submit">Test your Fate</button>
+          </section>
         </form>
       </section>
 
       <section class="about-view container">
-        about view container
-        <img class="codeblasters" id="matthew">
-          <p></p>
-        <img class="codeblasters" id="tom">
-          <p></p>
-        <img class="codeblasters" id="brandon">
-          <p></p>
-        <img class="codeblasters" id="andy">
-          <p></p>
+        <h2>About Us</h2>
+        <section class="coder">
+          <img class="codeblasters" src="">
+          <p>My name is Andrew Helmer. Prior to coming to codefellows I grew up in St. Landry Louisiana and Kingwood Texas. When I'm not coding I love to hang out with my dog, go fishing, play sports, and play video games. I plan on using the skills I learned during this project to improve myself moving forward.</p>
+          <p><a href="https://github.com/AndrewHelmer">GitHub</a><a href="https://www.linkedin.com/in/andrew-helmer-45881b164/">LinkedIn</a></p>
+        </section>
+        <section class="coder">
+          <img class="codeblasters" id="tom" src="assets/tom.jpg">
+          <p>My name is Andrew Helmer. Prior to coming to codefellows I grew up in St. Landry Louisiana and Kingwood Texas. When I'm not coding I love to hang out with my dog, go fishing, play sports, and play video games. I plan on using the skills I learned during this project to improve myself moving forward.</p>
+          <p><a href="https://github.com/tnorth93">GitHub</a><a href="https://www.linkedin.com/in/andrew-helmer-45881b164/">LinkedIn</a></p>
+        </section>
+        <section class="coder">
+          <img class="codeblasters" id="brandon" src="">
+          <p>My name is Andrew Helmer. Prior to coming to codefellows I grew up in St. Landry Louisiana and Kingwood Texas. When I'm not coding I love to hang out with my dog, go fishing, play sports, and play video games. I plan on using the skills I learned during this project to improve myself moving forward.</p>
+          <p><a href="https://github.com/AndrewHelmer">GitHub</a><a href="https://www.linkedin.com/in/andrew-helmer-45881b164/">LinkedIn</a></p>
+        </section>
+        <section class="coder">
+          <img class="codeblasters" id="andy" src="assets/andy.jpg">
+          <p>My name is Andrew Helmer. Prior to coming to codefellows I grew up in St. Landry Louisiana and Kingwood Texas. When I'm not coding I love to hang out with my dog, go fishing, play sports, and play video games. I plan on using the skills I learned during this project to improve myself moving forward.</p>
+          <p><a href="https://github.com/AndrewHelmer">GitHub</a><a href="https://www.linkedin.com/in/andrew-helmer-45881b164/">LinkedIn</a></p>
+        </section>
+      </section>
+
+      <section class="scoreboard-view container">
+          scoreboard view container
       </section>
       
     </main>

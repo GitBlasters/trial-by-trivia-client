@@ -7,7 +7,7 @@ var app = app || {};
   // Andy: theoretically should be getting rid of the log in info and 
   $('.input-name').on('submit' , function(event) {
     event.preventDefault();
-    $('quiz-view').showOnly();
+    $('.quiz-view').showOnly();
     $('.view-title').hide();
     $('#username-form').hide();
   });
