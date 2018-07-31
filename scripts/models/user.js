@@ -12,33 +12,20 @@ var app = app || {};
     Object.keys(rawUserObj).forEach(key => this[key] = rawUserObj[key]);
   }
 
+  // prototype for making username & score html content to render in scoreboard
   User.prototype.toHtml = function(){
     return app.render('user-score-template',this);
   }
 
   User.all = [];
 
+  // load the above array with all the user data on the database
   User.loadAll = rows => User.all = rows.sort((a,b) => a.score - b.score).map(user => new User(user));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  // after accepting and creating a new user, navigate to the quiz page to begin
+  User.create = user =>
+    $.post(`${app.ENVIRONMENT.apiUrl}/api/v1/user`, user)
+      .then(() => page('/quiz'))
+      .catch(errorCallback);
 
 })(app);
