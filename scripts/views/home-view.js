@@ -9,8 +9,9 @@ var app = app || {};
   homeView.initHomePage = () => {
     app.showOnly('.home-view');
 
-    $('#username-form').on('submit', (event) => {
+    $('#trial-options').on('submit', (event) => {
       event.preventDefault();
+      module.Retriever.setGameOptions();
       // Tom: going to need to initiate quiz-view somewhere in here
       let userData = {
         userName: event.target.username.value,
