@@ -11,7 +11,7 @@ var app = app || {};
 
     $('#username-form').on('submit', (event) => {
       event.preventDefault();
-
+      // Tom: going to need to initiate quiz-view somewhere in here
       let userData = {
         userName: event.target.username.value,
         score: 0,
