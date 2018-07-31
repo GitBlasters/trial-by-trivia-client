@@ -19,6 +19,7 @@ var app = app || {};
 
   User.all = [];
 
+  // load the above array with all the user data on the database
   User.loadAll = rows => User.all = rows.sort((a,b) => a.score - b.score).map(user => new User(user));
 
   // after accepting and creating a new user, navigate to the quiz page to begin
