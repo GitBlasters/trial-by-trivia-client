@@ -16,15 +16,25 @@ header {
   font-size: 30px;
   margin-top: 25px;
 }
+
 .about-view {
   text-align: center;
   margin: 0 auto;
   font-size: 30px;
   margin-top: 25px;
 }
+
 .scoreboard-view {
   text-align: center;
   margin: 0 auto;
   font-size: 30px;
   margin-top: 25px;
+}
+
+.quiz-view {
+  
+  width: 85%;
+  margin: 20px auto;
+  text-align: center;
+  height: 560px;
 }

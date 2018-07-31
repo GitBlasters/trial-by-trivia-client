@@ -25,13 +25,13 @@
   </head>
   <body>
     <header>
-      <h1>Trial by Trivia</h1>
+      <h1><a href="/">Trial by Trivia</a></h1>
       <nav>
         <!-- TODO -->
         <ul class="navigation">
-          <li><a href="/">Home</a></li>
           <li><a href="/quiz/scoreboard">Scoreboard</a></li>
           <li><a href="/about">About</a></li>          
+          <li><a href="/quiz">quiz-view(for testing)</a></li>          
         </ul>
       </nav>
     </header>
@@ -43,7 +43,13 @@
       </section>
 
       <section class="quiz-view container">
-        quiz view container
+        <h2>QUESTION GOES HERE</h2>
+          <ul>
+            <li>answer1</li>
+            <li>answer2</li>
+            <li>answer3</li>
+            <li>answer4</li>
+          </ul>
       </section>
 
       <section class="scoreboard-view container">
@@ -55,7 +61,7 @@
         <form id="username-form">
           <input type="text" name="username" placeholder="Max 15 chars" required>
           <button type="submit">Quiz Me!</button>
-        </form
+        </form>
       </section>
 
       <section class="about-view container">
@@ -91,6 +97,7 @@
     <script src="/scripts/views/question-views.js"></script>
     <script src="/scripts/views/scoreboard-view.js"></script>
     <script src="/scripts/views/error-view.js"></script>
+    <script src="/scripts/views/quiz-view.js"></script>
     <script src="/scripts/views/routes.js"></script>
   </body>
 </html>
