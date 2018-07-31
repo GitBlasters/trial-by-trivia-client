@@ -4,7 +4,7 @@ var app = app || {};
 
 (function(module){
 
-  let productionApiUrl = 'https://git.heroku.com/trial-by-trivia.git';
+  let productionApiUrl = 'https://trial-by-trivia.herokuapp.com/';
   let developmentApiUrl = 'http://localhost:3000';
 
   module.isProduction= /^(?!localhost|127)/.test(window.location.hostname);
