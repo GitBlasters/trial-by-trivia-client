@@ -57,7 +57,7 @@
         <form id="trial-options">
           <section>
             <label for="category">Trial Topic</label>
-            <select name="question-category" id="type-of-questions" required>
+            <select name="question-category" id="type-of-questions">
               <option value="any">All Categories</option>
               <option value="9">General</option>
               <option value="10">Books</option>
@@ -79,7 +79,7 @@
           </section>
           <section>
             <label for="difficulty">Difficulty</label>
-            <select name="question-difficulty" id="difficulty-of-questions" required>
+            <select name="question-difficulty" id="difficulty-of-questions">
               <option value="any">Let the gods Decide</option>
               <option value="easy">Tough</option>
               <option value="medium">Grueling</option>
@@ -87,8 +87,8 @@
             </select>
           </section>
           <section>
-            <input type="text" name="username" placeholder="Max 15 chars" required>
-            <button type="submit">Test your Fate</button>
+            <input type="text" name="username" placeholder="Max 15 chars">
+            <button id="game-submit" type="submit">Test your Fate</button>
           </section>
         </form>
       </section>
