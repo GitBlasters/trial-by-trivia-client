@@ -1,0 +1,35 @@
+h1 {
+  font-family: 'Pirata One', cursive;
+  font-size: 60px;
+  color: #8C0004;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  opacity: 1;
+}
+
+nav {
+ margin: 0 auto;
+ text-align: center;
+}
+
+.navigation li {
+  display: inline;
+  list-style-type: none;
+  padding: 8px;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  font-size: 20px;
+}
+
+a:link {
+  color: #C8000A;
+}
+
+a:visited {
+  color: #C8000A;
+}

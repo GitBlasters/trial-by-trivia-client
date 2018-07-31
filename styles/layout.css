@@ -1,4 +1,30 @@
 header {
-  background-color: grey;
-  height: 100px;
+  background-color: #E2C499;
+  height: 105px;
+}
+
+.home-view {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 30px;
+  margin-top: 25px;
+}
+
+.error-view {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 30px;
+  margin-top: 25px;
+}
+.about-view {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 30px;
+  margin-top: 25px;
+}
+.scoreboard-view {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 30px;
+  margin-top: 25px;
 }
