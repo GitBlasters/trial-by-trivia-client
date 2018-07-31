@@ -57,11 +57,43 @@
       </section>
 
       <section class="home-view container">
-        <h2 class="view-title">Please enter your name.</h2>
-        <form id="username-form">
-          <input type="text" name="username" placeholder="Max 15 chars" required>
-
-          <button type="submit">Quiz Me!</button>
+        <h2 class="view-title">Choose your Trial</h2>
+        <form id="trial-options">
+          <section>
+            <label for="category">Trial Topic</label>
+            <select name="question-category" id="type-of-questions" required>
+              <option value="any">All Categories</option>
+              <option value="9">General</option>
+              <option value="10">Books</option>
+              <option value="11">Film</option>
+              <option value="12">Music</option>
+              <option value="14">Television</option>
+              <option value="15">Video Games</option>   
+              <option value="17">Science and Nature</option>
+              <option value="18">Computers</option>
+              <option value="20">Mythology</option>
+              <option value="21">Sports</option>
+              <option value="22">Geography</option>
+              <option value="23">History</option>
+              <option value="24">Politics</option>
+              <option value="26">Celebrities</option>
+              <option value="27">Animals</option>
+              <option value="28">Vehicles</option>
+            </select>
+          </section>
+          <section>
+            <label for="difficulty">Difficulty</label>
+            <select name="question-difficulty" id="difficulty-of-questions" required>
+              <option value="any">Let the gods Decide</option>
+              <option value="easy">Tough</option>
+              <option value="medium">Grueling</option>
+              <option value="hard">INSANE</option>
+            </select>
+          </section>
+          <section>
+            <input type="text" name="username" placeholder="Max 15 chars" required>
+            <button type="submit">Test your Fate</button>
+          </section>
         </form>
       </section>
 

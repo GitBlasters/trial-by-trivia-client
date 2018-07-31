@@ -1,3 +1,4 @@
+/* Tom: Header styling */
 h1 {
   font-family: 'Pirata One', cursive;
   color: #8C0004;
@@ -36,6 +37,38 @@ a:visited {
   color: #C8000A;
 }
 
+/* Tom: home-view styling */
+section.home-view h2{
+  height: 10%;
+  line-height: 55.99px;
+  background-color: #E2C499;
+  border: 2px solid #8C0004;
+  box-sizing: border-box;
+}
+
+section.home-view form {
+  height: 90%;
+  border-left: 2px solid #C8000A;
+  border-right: 2px solid #C8000A;
+  border-bottom: 2px solid #C8000A;
+  box-sizing: border-box;
+  background-color: rgba(0.3, 0.3, 0.3, .3);
+}
+
+section.home-view section {
+  height: 33.3%;
+  box-sizing: border-box;
+  border-bottom: 2px solid #C8000A;
+  padding-top: 65px;
+
+}
+
+section.home-view section:last-of-type {
+  border: none;
+}
+
+
+/* Tom: quiz-view styling */
 section.quiz-view h2 {
   height: 20%;
   line-height: 83.99px;
