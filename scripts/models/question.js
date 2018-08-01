@@ -6,7 +6,7 @@ var app = app || {};
   const Retriever = {};
 
   // Tom: this function generates a customized api URL based on the options selected by the user. It is called in home-view.js
-  Retriever.setGameOptions = () => {
+  Retriever.setGameOptions = callback => {
     let gameDifficulty = $('#difficulty-of-questions option:selected').val();
     let gameCategory = $('#type-of-questions option:selected').val();
     let url = '';
@@ -20,7 +20,7 @@ var app = app || {};
       url = `https://opentdb.com/api.php?amount=10&category=${gameCategory}&difficulty=${gameDifficulty}&type=multiple`;
     }
     $.get(url).then((data) => {
-      app.Quiz.loadAll(data.results);
+      app.Quiz.loadAll(data.results)
     });
   }
 

@@ -52,7 +52,7 @@ section.home-view form {
   border-right: 2px solid #C8000A;
   border-bottom: 2px solid #C8000A;
   box-sizing: border-box;
-  background-color: rgba(0.3, 0.3, 0.3, .3);
+  background-color: rgba(0.3, 0.3, 0.3, .7);
 }
 
 section.home-view section {
@@ -82,7 +82,7 @@ section.quiz-view ul {
   border-bottom: 2px solid #C8000A;
   border-right: 2px solid #C8000A;
   box-sizing: border-box;
-  background-color: rgba(0.3, 0.3, 0.3, .3);
+  background-color: rgba(0.3, 0.3, 0.3, .7);
 }
 
 section.quiz-view li {
