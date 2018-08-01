@@ -6,40 +6,29 @@ var app = app || {};
 (function(module) {
 
   Quiz.all = [];
+  Quiz.currentQuestionIndex = 0;
 
   function Quiz(rawDataObject) {
     Object.keys(rawDataObject).forEach(key => this[key] = rawDataObject[key]);
   }
 
-  // Quiz.prototype.toHtml = function () {
-  //   let template = Handlebars.compile($('#question-template').html());
-  //   let answers = [1, 2, 3, 4];
-  //   // answers.push(this.correct_answer);
-  //   // this.incorrect_answer.forEach(inst => answers.push(inst));
-
-  //   this.answer1 = answers[0];
-  //   this.answer2 = answers[1];
-  //   this.answer3 = answers[2];
-  //   this.answer4 = answers[3];
-
-  //   return template(this) 
-  // };
-
+  
+  Quiz.loadAll = (questions) => {
+    Quiz.all = questions.map(ele => new Quiz(ele));
+    console.log(Quiz.all);
+  };
+  
   Quiz.prototype.toHtml = function () {
     let template = Handlebars.compile($('#question-template').html());
     let answers = [this.correct_answer];
+    let question = [this.question];
     this.incorrect_answers.forEach(item => answers.push(item));
+    this.question = question;
     this.answer1 = answers[0];
     this.answer2 = answers[1];
     this.answer3 = answers[2];
     this.answer4 = answers[3];
     return template(this)
   };
-
-  Quiz.loadAll = (questions) => {
-    Quiz.all = questions.map(ele => new Quiz(ele));
-    console.log(Quiz.all);
-  };
-
   module.Quiz = Quiz;
 })(app);
