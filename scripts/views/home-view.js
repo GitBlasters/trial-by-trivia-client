@@ -8,13 +8,11 @@ var app = app || {};
 
   homeView.initHomePage = () => {
     app.showOnly('.home-view');
-    // Tom: going to need to initiate quiz-view somewhere in here
-    // let userData = {
-    //   userName: event.target.username.value,
-    //   score: 0,
-    // };
-
-    // module.User.create(userData);
+    $('#trial-options').on('submit', (event) => {
+      event.preventDefault();
+      app.Retriever.setGameOptions();
+      // at this point we should have a populated quiz.all array
+    })
   }
   module.homeView = homeView;
 })(app)
