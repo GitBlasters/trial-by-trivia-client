@@ -3,28 +3,19 @@
 // {"category":"Mythology","type":"multiple","difficulty":"easy","question":"This Greek goddess&#039;s name was chosen for the dwarf planet responsible for discord on Pluto&#039;s classification amongst astronomers.","correct_answer":"Eris","incorrect_answers":["Charon","Ceres","Dysnomia"]}
 var app = app || {};
 
-(function (module){
+(function(module) {
 
-  let parsedData = JSON.parse($.get(`https://opentdb.com/api.php?amount=10`));
-console.log(parsedData);
- 
-  });
-  
-  // .then(console.log)
+  Quiz.all = [];
+  Quiz.loadAll = (rawQuestions) => {
+    Quiz.all = rawQuestions.map(ele => new Quiz(ele));
+    console.log(Quiz.all);
+  };
 
-  // var data = JSON.parse(this.response);
-
-// if (request.status >= 200 && request.status < 400) {
-//   });
-// } else {
-//   console.log('error');
-// }
-
-  function Question (rawDataObject) {
+  function Quiz(rawDataObject) {
     Object.keys(rawDataObject).forEach(key => this[key] = rawDataObject[key]);
   }
 
-  Question.prototype.toHtml = function () {
+  Quiz.prototype.toHtml = function () {
     // $.get(`https://opentdb.com/api.php?amount=10`);
     let template = Handlebars.compile($('#question-template').html());
     let answers = [];
@@ -36,8 +27,7 @@ console.log(parsedData);
     this.answer3 = answers[2];
     this.answer4 = answers[3];
 
-    return template(this)
-    
+    return template(this) 
   };
-  Question(parsedData);
+  module.Quiz = Quiz;
 })(app);

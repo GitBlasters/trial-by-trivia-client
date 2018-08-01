@@ -20,8 +20,7 @@ var app = app || {};
       url = `https://opentdb.com/api.php?amount=10&category=${gameCategory}&difficulty=${gameDifficulty}`;
     }
     $.get(url).then((data) => {
-      console.log(url);
-      console.log(data);
+      app.Quiz.loadAll(data.results);
     });
   }
 
