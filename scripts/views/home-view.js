@@ -12,13 +12,15 @@ var app = app || {};
     $('#trial-options').on('submit', (event) => {
       event.preventDefault();
       module.Retriever.setGameOptions();
-      // Tom: going to need to initiate quiz-view somewhere in here
-      let userData = {
-        userName: event.target.username.value,
-        score: 0,
-      };
+      module.QuizView.initQuizPage();
 
-      module.User.create(userData);
+      // Tom: going to need to initiate quiz-view somewhere in here
+      // let userData = {
+      //   userName: event.target.username.value,
+      //   score: 0,
+      // };
+
+      // module.User.create(userData);
     })
   }
   module.homeView = homeView;

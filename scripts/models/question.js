@@ -11,13 +11,13 @@ var app = app || {};
     let gameCategory = $('#type-of-questions option:selected').val();
     let url = '';
     if (gameCategory === 'any' && gameDifficulty === 'any') {
-      url = 'https://opentdb.com/api.php?amount=10';
+      url = 'https://opentdb.com/api.php?amount=10&type=multiple';
     } else if (gameCategory !== 'any' && gameDifficulty === 'any') {
-      url = `https://opentdb.com/api.php?amount=10&category=${gameCategory}`;
+      url = `https://opentdb.com/api.php?amount=10&category=${gameCategory}&type=multiple`;
     } else if (gameCategory === 'any' && gameDifficulty !== 'any') {
-      url = `https://opentdb.com/api.php?amount=10&difficulty=${gameDifficulty}`;
+      url = `https://opentdb.com/api.php?amount=10&difficulty=${gameDifficulty}&type=multiple`;
     } else {
-      url = `https://opentdb.com/api.php?amount=10&category=${gameCategory}&difficulty=${gameDifficulty}`;
+      url = `https://opentdb.com/api.php?amount=10&category=${gameCategory}&difficulty=${gameDifficulty}&type=multiple`;
     }
     $.get(url).then((data) => {
       app.Quiz.loadAll(data.results);
