@@ -13,9 +13,11 @@ var app = app || {};
   }
 
   
-  Quiz.loadAll = (questions) => {
+  Quiz.loadAll = (questions, callback) => {
     Quiz.all = questions.map(ele => new Quiz(ele));
-    console.log(Quiz.all);
+    if (callback) {
+      callback();
+    }
   };
   
   Quiz.prototype.toHtml = function () {
@@ -28,7 +30,7 @@ var app = app || {};
     this.answer2 = answers[1];
     this.answer3 = answers[2];
     this.answer4 = answers[3];
-    return template(this)
+    return template(this);
   };
   module.Quiz = Quiz;
 })(app);
