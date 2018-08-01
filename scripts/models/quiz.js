@@ -19,7 +19,7 @@ var app = app || {};
       callback();
     }
   };
-  
+
   Quiz.prototype.toHtml = function () {
     let template = Handlebars.compile($('#question-template').html());
     let answers = [this.correct_answer];
