@@ -13,6 +13,7 @@ var app = app || {};
   ]
   scoreboardView.initScoreboardPage = () => {
     app.showOnly('.scoreboard-view');
+    $('#scores').empty();
     for( let i=0; i <= scoreboardView.dummyData.length; i++) {
       $('#scores').append(app.render('scoreboard-template', app.scoreboardView.dummyData[i]));
     }
