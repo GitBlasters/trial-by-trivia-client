@@ -14,7 +14,7 @@ var app = app || {};
 
   // prototype for making username & score html content to render in scoreboard
   User.prototype.toHtml = function(){
-    return app.render('user-score-template',this);
+    return app.render('scoreboard-template',this);
   }
 
   User.all = [];
@@ -34,7 +34,7 @@ var app = app || {};
         User.loadAll(results);
         callback();
       })
-      .catch(errorCallback);
+      // .catch(errorCallback);
   }
 
   // after accepting and creating a new user, navigate to the quiz page to begin
@@ -42,5 +42,5 @@ var app = app || {};
     $.post(`${app.ENVIRONMENT.apiUrl}/api/v1/user_data`, user)
       .then(() => page('/quiz'))
       .catch(errorCallback);
-
+  module.User = User;
 })(app);
