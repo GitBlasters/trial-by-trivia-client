@@ -1,0 +1,7 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  counter-reset: section;
+  /* background-image: url('../assets/cathedral.jpg');
+  background-size: contain;
+  background-repeat: no-repeat; */
+}
