@@ -15,7 +15,8 @@ var app = app || {};
       $('.quiz-view').append(app.Quiz.all[app.Quiz.currentQuestionIndex].toHtml());
       $('.score').text(`Score: ${quizView.score}`);
     } else {
-      app.scoreboardView.initScoreboardPage();
+      // app.scoreboardView.initScoreboardPage();
+      app.User.fetchAll(() => app.scoreboardView.initScoreboardPage());
     }
     $('#quiz-list').on('click', '.question-answer', function() {
       if ($(this).text() === app.Quiz.all[app.Quiz.currentQuestionIndex].correct_answer) {
