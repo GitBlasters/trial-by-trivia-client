@@ -29,6 +29,9 @@ var app = app || {};
       }
     })
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9e2d40eb88fccf32048e133a85a9d92f4278bfbc
   module.quizView = quizView;
 })(app)

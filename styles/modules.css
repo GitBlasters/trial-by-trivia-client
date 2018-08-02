@@ -176,6 +176,7 @@ section.about-view img {
 section.about-view a {
   padding: 10px;
 }
+/* Andy scoreboard view styling */
 
 /* Scoreboard-view styling */
 
@@ -204,10 +205,10 @@ section.scoreboard-view li {
 
 section.scoreboard-view li::before{
   counter-increment: section; 
-  content:counter(section, lower-roman);
-  margin-right:30px;
+  content:counter(section);
 }
 
+<<<<<<< HEAD
 @media (min-width: 890px) {
   section.quiz-view h2 {
     height: 20%;
@@ -220,3 +221,8 @@ section.scoreboard-view li::before{
   }
 }
 
+=======
+section.scoreboard-view li:last-child{
+  display: none; 
+}
+>>>>>>> 9e2d40eb88fccf32048e133a85a9d92f4278bfbc
