@@ -139,6 +139,7 @@ section.about-view img {
 section.about-view a {
   padding: 10px;
 }
+/* Andy scoreboard view styling */
 
 section.scoreboard-view h2 {
   font-family: 'Pirata One', cursive;
@@ -165,7 +166,9 @@ section.scoreboard-view li {
 
 section.scoreboard-view li::before{
   counter-increment: section; 
-  content:counter(section, lower-roman);
-  margin-right:30px;
+  content:counter(section);
 }
 
+section.scoreboard-view li:last-child{
+  display: none; 
+}
