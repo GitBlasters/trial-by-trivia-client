@@ -10,6 +10,7 @@ var app = app || {};
     app.showOnly('.scoreboard-view');
     $('#scores').empty();
     for( let i=0; i <= app.User.all.length; i++) {
+
       $('#scores').append(app.render('scoreboard-template', app.User.all[i]));
     }
   }

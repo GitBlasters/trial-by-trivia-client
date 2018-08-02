@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/modules.css">
   
     <title>Trial by Trivia</title>
+    <base href=".">
     <!-- Brandon: Handlebar Templates-->
     <script type="text/x-handlebars-template" id="error-template">
       <h3> Oops, something went wrong.</h3>
@@ -37,8 +38,12 @@
       <nav>
         <!-- TODO -->
         <ul class="navigation">
-          <li><a href="/quiz/scoreboard">Scoreboard</a></li>
-          <li><a href="/about">About</a></li>                
+          <!-- local version -->
+          <!-- <li><a href="/quiz/scoreboard">Scoreboard</a></li>
+          <li><a href="/about">About</a></li> -->
+          <!-- deployed version -->
+          <li><a href="trial-by-trivia-client/quiz/scoreboard">Scoreboard</a></li>
+          <li><a href="trial-by-trivia-client/about">About</a></li>                     
         </ul>
       </nav>
     </header>
@@ -137,16 +142,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
 
     <!-- Tom: Client JS scripts -->
-    <script src="/scripts/models/index.js"></script>
-    <script src="/scripts/models/user.js"></script>
-    <script src="/scripts/models/quiz.js"></script>
-    <script src="/scripts/views/quiz-view.js"></script>
-    <script src="/scripts/models/question.js"></script>
-    <script src="/scripts/views/about-view.js"></script>
-    <!-- <script src="/scripts/views/question-views.js"></script> -->
-    <script src="/scripts/views/scoreboard-view.js"></script>
-    <script src="/scripts/views/error-view.js"></script>
-    <script src="/scripts/views/home-view.js"></script>
-    <script src="/scripts/views/routes.js"></script>
+    <script src="./scripts/models/index.js"></script>
+    <script src="./scripts/models/user.js"></script>
+    <script src="./scripts/models/quiz.js"></script>
+    <script src="./scripts/views/quiz-view.js"></script>
+    <script src="./scripts/models/question.js"></script>
+    <script src="./scripts/views/about-view.js"></script>
+    <script src="./scripts/views/scoreboard-view.js"></script>
+    <script src="./scripts/views/error-view.js"></script>
+    <script src="./scripts/views/home-view.js"></script>
+    <script src="./scripts/views/routes.js"></script>
   </body>
 </html>
