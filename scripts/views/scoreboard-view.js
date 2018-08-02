@@ -5,14 +5,13 @@ var app = app || {};
 (function(module) {
 
   const scoreboardView = {};
-  scoreboardView.dummyData = app.User.all;
-  // [
-  //   {username: 'Gregor', score:100},
-  //   {username: 'Bill', score:200},
-  //   {username:'Joey', score:300},
-  // ];
+
   scoreboardView.initScoreboardPage = () => {
+
+    $('#scores').empty();
+
     scoreboardView.dummyData = app.User.all;
+
     app.showOnly('.scoreboard-view');
     $('#scores').empty();
     for( let i=0; i <= scoreboardView.dummyData.length; i++) {
