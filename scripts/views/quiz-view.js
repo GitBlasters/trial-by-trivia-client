@@ -31,6 +31,7 @@ var app = app || {};
         quizView.initQuizView();
       }
     })
+  }
 
   module.quizView = quizView;
 })(app)

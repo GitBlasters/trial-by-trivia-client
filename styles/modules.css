@@ -108,6 +108,21 @@ section.quiz-view li:last-of-type {
   background: blue;
 }
 
+#submit-answer {
+  padding: 10px;
+  width: 85%;
+  margin-top: 10px;
+  background-color: #C8000A;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  outline: none;
+}
+
+#submit-answer:selected {
+
+}
+
 /* Tom: about-view styling */
 section.about-view h2 {
   height: 40px;
