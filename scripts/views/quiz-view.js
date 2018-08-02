@@ -7,10 +7,10 @@ var app = app || {};
 
   quizView.score = 0;
   quizView.initQuizView = function() {
+    $('.quiz-view').empty();
     $('.view-title').hide();
     $('.home-view').hide();
     $('.quiz-view').fadeIn(500);
-    $('.quiz-view').empty();
     if (app.Quiz.currentQuestionIndex < app.Quiz.all.length) {
       $('.quiz-view').append(app.Quiz.all[app.Quiz.currentQuestionIndex].toHtml());
       $('.score').text(`Score: ${quizView.score}`);
