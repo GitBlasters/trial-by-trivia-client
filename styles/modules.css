@@ -168,4 +168,6 @@ section.scoreboard-view li::before{
   content:counter(section, lower-roman);
   margin-right:30px;
 }
-
+section.scoreboard-view li:last-child{
+  display: none; 
+}
