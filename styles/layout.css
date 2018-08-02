@@ -1,6 +1,7 @@
 header {
   background-color: #E2C499;
   height: 105px;
+  opacity: 60%;
 }
 
 .home-view {
@@ -24,6 +25,7 @@ header {
   width: 85%;
   background-color: rgba(0.3, 0.3, 0.3, .8);
   box-sizing: border-box;
+  color: white;
 }
 
 .scoreboard-view {

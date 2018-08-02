@@ -37,6 +37,13 @@ a:visited {
   color: #C8000A;
 }
 
+h1 a {
+  color: #8C0004;
+}
+h1 a:visited {
+  color: #8C0004;
+}
+
 /* Tom: home-view styling */
 section.home-view h2{
   height: 10%;
@@ -44,6 +51,9 @@ section.home-view h2{
   background-color: #E2C499;
   border: 2px solid #8C0004;
   box-sizing: border-box;
+  font-family: 'Pirata One', cursive;
+  color: #8C0004;
+  font-size: 38px;
 }
 
 section.home-view form {
@@ -59,11 +69,23 @@ section.home-view section {
   height: 33.3%;
   box-sizing: border-box;
   border-bottom: 2px solid #C8000A;
-  padding-top: 65px;
+  padding-top: 40px;
 }
 
 section.home-view section:last-of-type {
   border: none;
+}
+
+section.home-view label {
+  display: block;
+  color: white;
+}
+
+section.home-view button {
+  display: block;
+  margin: 10px auto;
+  padding: 7px;
+  width: 30%;
 }
 
 
@@ -73,7 +95,7 @@ section.quiz-view h2 {
   padding: 20px;
   line-height: 2em;
   background-color: #E2C499;
-  border: 2px solid #8C0004;
+  border: 4px solid #8C0004;
   box-sizing: border-box;
 }
 
@@ -93,20 +115,33 @@ section.quiz-view li {
   box-sizing: border-box;
   color: #E2C499;
   border-bottom: 2px solid #C8000A;
-  text-shadow:
-		-0.5px -0.5px 0 #8C0004,
-		0.5px -0.5px 0 #8C0004,
-		-0.5px 0.5px 0 #8C0004,
-		0.5px 0.5px 0 #8C0004;
 }
 
 section.quiz-view li:last-of-type {
   border: none;
 }
 
-.question-selected {
-  background: blue;
+#quiz-list li:hover {
+  background-color: #8C0004;
+  font-size: 25px;
 }
+
+.score {
+  background-color: #E2C499;
+  width: 23%;
+  margin: 0 auto;
+  color: #8C0004;
+  height: 50px;
+  line-height: 50px;
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+
+
+
+
+
 
 /* Tom: about-view styling */
 section.about-view h2 {
@@ -115,6 +150,8 @@ section.about-view h2 {
   background-color: #E2C499;
   border: 2px solid #8C0004;
   box-sizing: border-box;
+  color: #8C0004;
+  font-size: 20px;
 }
 
 .coder {
@@ -139,6 +176,9 @@ section.about-view img {
 section.about-view a {
   padding: 10px;
 }
+/* Andy scoreboard view styling */
+
+/* Scoreboard-view styling */
 
 section.scoreboard-view h2 {
   font-family: 'Pirata One', cursive;
@@ -165,7 +205,35 @@ section.scoreboard-view li {
 
 section.scoreboard-view li::before{
   counter-increment: section; 
-  content:counter(section, lower-roman);
-  margin-right:30px;
+  content:counter(section);
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 976e47655ad602dbf27fdcc25d14b805a69aa229
+@media (min-width: 890px) {
+  section.quiz-view h2 {
+    height: 20%;
+    padding: 20px;
+    line-height: 2em;
+    background-color: #E2C499;
+    border: 2px solid #8C0004;
+    box-sizing: border-box;
+    font-size: 20px;
+  }
+}
+
+<<<<<<< HEAD
+=======
+section.scoreboard-view li:last-child{
+  display: none; 
+}
+>>>>>>> 9e2d40eb88fccf32048e133a85a9d92f4278bfbc
+=======
+
+section.scoreboard-view li:last-child{
+  display: none; 
+}
+
+>>>>>>> 976e47655ad602dbf27fdcc25d14b805a69aa229
