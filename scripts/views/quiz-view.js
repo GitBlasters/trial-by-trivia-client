@@ -30,8 +30,12 @@ var app = app || {};
     })
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 9e2d40eb88fccf32048e133a85a9d92f4278bfbc
+=======
+
+>>>>>>> 976e47655ad602dbf27fdcc25d14b805a69aa229
   module.quizView = quizView;
 })(app)
