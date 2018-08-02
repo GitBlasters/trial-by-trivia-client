@@ -31,8 +31,12 @@ header {
 .scoreboard-view {
   text-align: center;
   margin: 0 auto;
-  font-size: 30px;
   margin-top: 25px;
+  width: 85%;
+  background-color: rgba(0.3, 0.3, 0.3, .8);
+  box-sizing: border-box;
+  color: white;
+  padding-bottom: 7px;
 }
 
 .quiz-view {
