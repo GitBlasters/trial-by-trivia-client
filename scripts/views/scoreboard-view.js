@@ -12,6 +12,7 @@ var app = app || {};
     {name:'Joey', score:300},
   ]
   scoreboardView.initScoreboardPage = () => {
+    $('#scores').empty();
     app.showOnly('.scoreboard-view');
     for( let i=0; i <= scoreboardView.dummyData.length; i++) {
       $('#scores').append(app.render('scoreboard-template', app.scoreboardView.dummyData[i]));
