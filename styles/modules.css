@@ -161,7 +161,11 @@ section.scoreboard-view li {
   display:block;
   font-size:60px;
   margin-bottom: 20px;
+}
+
+section.scoreboard-view li::before{
   counter-increment: section; 
-  content:counter(section);
+  content:counter(section, lower-roman);
+  margin-right:30px;
 }
 
