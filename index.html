@@ -17,11 +17,11 @@
     </script>
     <script type="text/x-handlebars-template" id="question-template">
       <h2>{{{question}}}</h2>
-          <ul>
-            <li>{{{answer1}}}</li>
-            <li>{{{answer2}}}</li>
-            <li>{{{answer3}}}</li>
-            <li>{{{answer4}}}</li>
+          <ul id="quiz-list">
+            <li class="question-answer">{{{answer1}}}</li>
+            <li class="question-answer">{{{answer2}}}</li>
+            <li class="question-answer">{{{answer3}}}</li>
+            <li class="question-answer">{{{answer4}}}</li>
           </ul>
     </script>
     <script type="text/x-handlebars-template" id="scoreboard-template">
@@ -36,8 +36,7 @@
         <!-- TODO -->
         <ul class="navigation">
           <li><a href="/quiz/scoreboard">Scoreboard</a></li>
-          <li><a href="/about">About</a></li>          
-          <li><a href="/quiz">quiz-view(for testing)</a></li>          
+          <li><a href="/about">About</a></li>                
         </ul>
       </nav>
     </header>
@@ -138,9 +137,9 @@
     <!-- Tom: Client JS scripts -->
     <script src="/scripts/models/index.js"></script>
     <script src="/scripts/models/user.js"></script>
+    <script src="/scripts/models/quiz.js"></script>
     <script src="/scripts/views/quiz-view.js"></script>
     <script src="/scripts/models/question.js"></script>
-    <script src="/scripts/models/quiz.js"></script>
     <script src="/scripts/views/about-view.js"></script>
     <!-- <script src="/scripts/views/question-views.js"></script> -->
     <script src="/scripts/views/scoreboard-view.js"></script>
