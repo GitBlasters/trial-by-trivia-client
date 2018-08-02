@@ -7,6 +7,8 @@ var app = app || {};
 
   // Tom: this function generates a customized api URL based on the options selected by the user. It is called in home-view.js
   Retriever.setGameOptions = () => {
+    app.Quiz.all = [];
+    app.quizView.score = 0;
     let gameDifficulty = $('#difficulty-of-questions option:selected').val();
     let gameCategory = $('#type-of-questions option:selected').val();
     let url = '';

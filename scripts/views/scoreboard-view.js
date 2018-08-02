@@ -8,7 +8,7 @@ var app = app || {};
 
   scoreboardView.initScoreboardPage = () => {
     app.Quiz.currentQuestionIndex = 0;
-    app.Quiz = [];
+    // app.Quiz = [];
     $('.view-title').show();
     app.showOnly('.scoreboard-view');
     $('#scores').empty();
