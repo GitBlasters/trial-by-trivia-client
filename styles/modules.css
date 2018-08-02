@@ -208,6 +208,10 @@ section.scoreboard-view li::before{
   content:counter(section);
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 976e47655ad602dbf27fdcc25d14b805a69aa229
 @media (min-width: 890px) {
   section.quiz-view h2 {
     height: 20%;
@@ -220,8 +224,16 @@ section.scoreboard-view li::before{
   }
 }
 
+<<<<<<< HEAD
+=======
+section.scoreboard-view li:last-child{
+  display: none; 
+}
+>>>>>>> 9e2d40eb88fccf32048e133a85a9d92f4278bfbc
+=======
 
 section.scoreboard-view li:last-child{
   display: none; 
 }
 
+>>>>>>> 976e47655ad602dbf27fdcc25d14b805a69aa229
