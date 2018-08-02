@@ -20,6 +20,7 @@ var app = app || {};
     }
   };
 
+
   Quiz.randomizeAnswer = (array) => {
     let randomIndex = Math.floor(Math.random() * array.length);
     return array.splice(randomIndex, 1);

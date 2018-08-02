@@ -4,6 +4,7 @@ var app = app || {};
 
 (function(module) {
   const quizView = {};
+
   quizView.initQuizView = function() {
     $('.view-title').hide();
     $('.home-view').hide();
@@ -30,7 +31,6 @@ var app = app || {};
         quizView.initQuizView();
       }
     })
-  }
 
   module.quizView = quizView;
 })(app)

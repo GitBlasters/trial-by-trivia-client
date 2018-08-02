@@ -140,3 +140,28 @@ section.about-view a {
   padding: 10px;
 }
 
+section.scoreboard-view h2 {
+  font-family: 'Pirata One', cursive;
+  margin-bottom: 80px;
+  font-size:70px;
+  background-color: #E2C499;
+}
+
+section.scoreboard-view ol {
+  text-shadow:
+    -0.5px -0.5px 0 #8C0004,
+    0.5px -0.5px 0 #8C0004,
+    -0.5px 0.5px 0 #8C0004,
+    0.5px 0.5px 0 #8C0004;
+    color: solid #8C0004; 
+}
+
+section.scoreboard-view li {
+  font-family: 'Press Start 2P', cursive;
+  display:block;
+  font-size:60px;
+  margin-bottom: 20px;
+  counter-increment: section; 
+  content:counter(section);
+}
+

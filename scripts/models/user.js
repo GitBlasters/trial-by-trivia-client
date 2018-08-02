@@ -26,7 +26,7 @@ var app = app || {};
 
   User.fetchAll = callback =>
     $.get(`${app.ENVIRONMENT.apiUrl}/api/v1/user_data`)
-      .then(User.loadAll)
+      .then(app.User.loadAll)
       .then(callback)
       .fail(errorCallback);
 
