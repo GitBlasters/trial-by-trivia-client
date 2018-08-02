@@ -8,6 +8,7 @@ var app = app || {};
 
   homeView.initHomePage = () => {
     app.showOnly('.home-view');
+    app.Quiz.currentQuestionIndex = 0;
     app.Quiz.all = [];
     $('#trial-options').on('submit', (event) => {
       event.preventDefault();

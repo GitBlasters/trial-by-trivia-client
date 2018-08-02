@@ -1,5 +1,5 @@
 header {
-  background-color: #E2C499;
+  background-color: rgba(226,196,153, 0.8);
   height: 105px;
   opacity: 60%;
 }
@@ -26,6 +26,8 @@ header {
   background-color: rgba(0.3, 0.3, 0.3, .8);
   box-sizing: border-box;
   color: white;
+  border-radius: 15px;
+  margin-bottom: 10px;
 }
 
 .scoreboard-view {
@@ -37,6 +39,9 @@ header {
   box-sizing: border-box;
   color: white;
   padding-bottom: 7px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+
 }
 
 .quiz-view {
