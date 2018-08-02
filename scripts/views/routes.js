@@ -1,7 +1,6 @@
 'use strict'
-if(window.location.pathname !== '/') {
-  page.base('/trial-by-trivia-client');
-}
+page.base('/trial-by-trivia-client');
+
 page('/'
   , ctx => app.homeView.initHomePage(ctx)
 );
