@@ -38,8 +38,10 @@ header {
   background-color: rgba(0.3, 0.3, 0.3, .8);
   box-sizing: border-box;
   color: white;
+  padding-bottom: 7px;
   border-radius: 15px;
   margin-bottom: 10px;
+
 }
 
 .quiz-view {

@@ -193,8 +193,9 @@ section.about-view a {
 
 section.scoreboard-view h2 {
   font-family: 'Pirata One', cursive;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
   font-size:70px;
+  color: #8C0004;
   background-color: rgba(226,196,153, 0.9);
 }
 
@@ -208,7 +209,7 @@ section.scoreboard-view ol {
 }
 
 section.scoreboard-view li {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Pirata One', cursive;
   display:block;
   font-size:60px;
   margin-bottom: 20px;
