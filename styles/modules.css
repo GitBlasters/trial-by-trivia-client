@@ -167,7 +167,6 @@ section.scoreboard-view li {
 section.scoreboard-view li::before{
   counter-increment: section; 
   content:counter(section);
-  margin-right:30px;
 }
 
 section.scoreboard-view li:last-child{
