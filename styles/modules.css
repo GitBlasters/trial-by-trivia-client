@@ -44,6 +44,9 @@ section.home-view h2{
   background-color: #E2C499;
   border: 2px solid #8C0004;
   box-sizing: border-box;
+  font-family: 'Pirata One', cursive;
+  color: #8C0004;
+  font-size: 38px;
 }
 
 section.home-view form {
@@ -59,11 +62,23 @@ section.home-view section {
   height: 33.3%;
   box-sizing: border-box;
   border-bottom: 2px solid #C8000A;
-  padding-top: 65px;
+  padding-top: 40px;
 }
 
 section.home-view section:last-of-type {
   border: none;
+}
+
+section.home-view label {
+  display: block;
+  color: white;
+}
+
+section.home-view button {
+  display: block;
+  margin: 10px auto;
+  padding: 7px;
+  width: 30%;
 }
 
 
@@ -104,24 +119,16 @@ section.quiz-view li:last-of-type {
   border: none;
 }
 
-.question-selected {
-  background: blue;
+#quiz-list li:hover {
+  background-color: #8C0004;
+  font-size: 25px;
 }
 
-#submit-answer {
-  padding: 10px;
-  width: 85%;
-  margin-top: 10px;
-  background-color: #C8000A;
-  border-radius: 10px;
-  border: none;
-  text-decoration: none;
-  outline: none;
-}
 
-#submit-answer:selected {
 
-}
+
+
+
 
 /* Tom: about-view styling */
 section.about-view h2 {
@@ -154,6 +161,8 @@ section.about-view img {
 section.about-view a {
   padding: 10px;
 }
+
+/* Scoreboard-view styling */
 
 section.scoreboard-view h2 {
   font-family: 'Pirata One', cursive;

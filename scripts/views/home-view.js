@@ -8,10 +8,10 @@ var app = app || {};
 
   homeView.initHomePage = () => {
     app.showOnly('.home-view');
+    app.Quiz.all = [];
     $('#trial-options').on('submit', (event) => {
       event.preventDefault();
       app.Retriever.setGameOptions();
-      // at this point we should have a populated quiz.all array
     })
   }
   module.homeView = homeView;

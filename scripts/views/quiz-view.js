@@ -23,11 +23,9 @@ var app = app || {};
       $(this).addClass('selected');
       if ($(this).text() === app.Quiz.all[app.Quiz.currentQuestionIndex].correct_answer) {
         app.Quiz.currentQuestionIndex += 1;
-        
         quizView.initQuizView();
       } else {
         app.Quiz.currentQuestionIndex += 1;
-       
         quizView.initQuizView();
       }
     })
