@@ -9,12 +9,17 @@ var app = app || {};
   quizView.initQuizView = function() {
     $('.view-title').hide();
     $('.home-view').hide();
-    $('.quiz-view').fadeIn(300);
+    $('.quiz-view').fadeIn(500);
     $('.quiz-view').empty();
     if (app.Quiz.currentQuestionIndex < app.Quiz.all.length) {
       $('.quiz-view').append(app.Quiz.all[app.Quiz.currentQuestionIndex].toHtml());
       $('.score').text(`Score: ${quizView.score}`);
     } else {
+      let newUser = {
+        user: app.Retriever.userName,
+        score: app.quizView.score
+      }
+      app.User.create;
       app.scoreboardView.initScoreboardPage();
     }
     $('#quiz-list').on('click', '.question-answer', function() {
