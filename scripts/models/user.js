@@ -33,7 +33,7 @@ var app = app || {};
   // after accepting and creating a new user, navigate to the quiz page to begin
   User.create = user =>
     $.post(`${app.ENVIRONMENT.apiUrl}/api/v1/user_data`, user)
-      .then(() => page('/quiz'))
-      .fail(errorCallback);
+    .fail(errorCallback);
+    
   module.User = User;
 })(app);
