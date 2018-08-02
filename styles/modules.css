@@ -150,13 +150,13 @@ section.quiz-view li:last-of-type {
 
 /* Tom: about-view styling */
 section.about-view h2 {
-  height: 40px;
-  line-height: 40px;
+  height: 70px;
+  line-height: 70px;
   background-color: rgba(226,196,153, 0.9);
   border: 2px solid #8C0004;
   box-sizing: border-box;
   color: #8C0004;
-  font-size: 34px;
+  font-size: 60px;
   border-radius: 15px 15px 0 0;
   font-family: 'Pirata One', cursive;
 }
@@ -194,7 +194,7 @@ section.about-view a {
 section.scoreboard-view h2 {
   font-family: 'Pirata One', cursive;
   margin-bottom: 20px;
-  font-size:70px;
+  font-size: 60px;
   color: #8C0004;
   background-color: rgba(226,196,153, 0.9);
   border: 3px solid #8C0004;
@@ -204,7 +204,7 @@ section.scoreboard-view h2 {
 section.scoreboard-view li {
   font-family: 'Pirata One', cursive;
   display:block;
-  font-size:60px;
+  font-size:50px;
   margin-bottom: 20px;
 }
 
