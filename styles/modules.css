@@ -70,7 +70,8 @@ section.home-view section:last-of-type {
 /* Tom: quiz-view styling */
 section.quiz-view h2 {
   height: 20%;
-  line-height: 83.99px;
+  padding: 20px;
+  line-height: 2em;
   background-color: #E2C499;
   border: 2px solid #8C0004;
   box-sizing: border-box;
@@ -87,11 +88,11 @@ section.quiz-view ul {
 
 section.quiz-view li {
   height: 25%;
+  font-size: 20px;
   line-height: 118.5px;
   box-sizing: border-box;
   color: #E2C499;
   border-bottom: 2px solid #C8000A;
-  font-size: 25px;
   text-shadow:
 		-0.5px -0.5px 0 #8C0004,
 		0.5px -0.5px 0 #8C0004,
@@ -101,6 +102,10 @@ section.quiz-view li {
 
 section.quiz-view li:last-of-type {
   border: none;
+}
+
+.question-selected {
+  background: blue;
 }
 
 /* Tom: about-view styling */

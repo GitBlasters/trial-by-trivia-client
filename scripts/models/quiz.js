@@ -12,7 +12,7 @@ var app = app || {};
     Object.keys(rawDataObject).forEach(key => this[key] = rawDataObject[key]);
   }
 
-  
+
   Quiz.loadAll = (questions, callback) => {
     Quiz.all = questions.map(ele => new Quiz(ele));
     if (callback) {
@@ -20,17 +20,24 @@ var app = app || {};
     }
   };
 
+
+  Quiz.randomizeAnswer = (array) => {
+    let randomIndex = Math.floor(Math.random() * array.length);
+    return array.splice(randomIndex, 1);
+  }
+
   Quiz.prototype.toHtml = function () {
     let template = Handlebars.compile($('#question-template').html());
     let answers = [this.correct_answer];
     let question = [this.question];
     this.incorrect_answers.forEach(item => answers.push(item));
     this.question = question;
-    this.answer1 = answers[0];
-    this.answer2 = answers[1];
-    this.answer3 = answers[2];
-    this.answer4 = answers[3];
+    this.answer1 = Quiz.randomizeAnswer(answers)[0];
+    this.answer2 = Quiz.randomizeAnswer(answers)[0];
+    this.answer3 = Quiz.randomizeAnswer(answers)[0];
+    this.answer4 = Quiz.randomizeAnswer(answers)[0];
     return template(this);
-  };
+  }
+
   module.Quiz = Quiz;
 })(app);
