@@ -7,9 +7,12 @@ var app = app || {};
   const scoreboardView = {};
 
   scoreboardView.initScoreboardPage = () => {
+    app.Quiz.currentQuestionIndex = 0;
+    app.Quiz = [];
     app.showOnly('.scoreboard-view');
     $('#scores').empty();
-    for( let i=0; i <= app.User.length; i++) {
+    for( let i=0; i <= app.User.all.length; i++) {
+
       $('#scores').append(app.render('scoreboard-template', app.User.all[i]));
     }
   }

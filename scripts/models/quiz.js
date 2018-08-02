@@ -12,14 +12,12 @@ var app = app || {};
     Object.keys(rawDataObject).forEach(key => this[key] = rawDataObject[key]);
   }
 
-
   Quiz.loadAll = (questions, callback) => {
     Quiz.all = questions.map(ele => new Quiz(ele));
     if (callback) {
       callback();
     }
   };
-
 
   Quiz.randomizeAnswer = (array) => {
     let randomIndex = Math.floor(Math.random() * array.length);

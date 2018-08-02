@@ -21,7 +21,6 @@ var app = app || {};
     }
     $.get(url)
       .then((data) => { app.Quiz.loadAll(data.results, app.quizView.initQuizView) })
-      .then(console.log(app.Quiz.all));
   }
 
   module.Retriever = Retriever;
