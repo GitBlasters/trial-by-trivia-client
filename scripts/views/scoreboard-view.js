@@ -7,21 +7,11 @@ var app = app || {};
   const scoreboardView = {};
 
   scoreboardView.initScoreboardPage = () => {
-
-    $('#scores').empty();
-
-    scoreboardView.dummyData = app.User.all;
-
     app.showOnly('.scoreboard-view');
     $('#scores').empty();
     for( let i=0; i <= scoreboardView.dummyData.length; i++) {
-      $('#scores').append(app.render('scoreboard-template', app.scoreboardView.dummyData[i]));
+      $('#scores').append(app.render('scoreboard-template', app.User.all[i]));
     }
-  
-    // $.get(url)
-    //   .then((data) => { app.Quiz.loadAll(data.results, app.quizView.initQuizView) })
-    //   .then(console.log(app.Quiz.all));
-
   }
   module.scoreboardView = scoreboardView;
 })(app)
