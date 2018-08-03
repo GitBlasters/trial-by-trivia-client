@@ -24,20 +24,15 @@ var app = app || {};
       app.User.create(newUser);
       app.User.fetchAll(() => app.scoreboardView.initScoreboardPage());
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     $(document).ready($('#quiz-list').on('click', '.question-answer', function() {
-=======
     $('#quiz-list').on('click', '.question-answer', function() {
       app.quizView.username = $('#user-name').val();
->>>>>>> c40a3f9290aa8f293493ce6dc20a1a78f42ffef4
-=======
 
     $(document).ready($('#quiz-list').on('click', '.question-answer', function() {
 
     $('#quiz-list').on('click', '.question-answer', function() {
       app.quizView.username = $('#user-name').val();
->>>>>>> d6fd881b8d7f5dc61d1e4f7583a718e5c129bab2
       if ($(this).text() === app.Quiz.all[app.Quiz.currentQuestionIndex].correct_answer) {
         quizView.score += 1;
         $('.score').text(`Score: ${quizView.score}`);
