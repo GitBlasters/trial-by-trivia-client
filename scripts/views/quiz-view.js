@@ -16,10 +16,10 @@ var app = app || {};
       $('.score').text(`Score: ${quizView.score}`);
     } else {
       let newUser = {
-        user: app.Retriever.userName,
+        username: app.Retriever.userName,
         score: app.quizView.score
       }
-      app.User.create;
+      app.User.create(newUser);
       app.scoreboardView.initScoreboardPage();
     }
     $('#quiz-list').on('click', '.question-answer', function() {
