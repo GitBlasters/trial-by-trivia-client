@@ -11,8 +11,9 @@ var app = app || {};
     app.Quiz.currentQuestionIndex = 0;
     app.Quiz.all = [];
     $('#trial-options').on('submit', (event) => {
+      app.quizView.username = $('#user-name').val();
       event.preventDefault();
-      app.Retriever.setGameOptions();
+      app.Retriever.setGameOptions(app.quizView.username);
     })
   }
   module.homeView = homeView;
