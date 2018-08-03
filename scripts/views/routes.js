@@ -1,5 +1,4 @@
 'use strict'
-// page.base('/trial-by-trivia-client');
 
 page('/'
   , ctx => app.homeView.initHomePage(ctx)
