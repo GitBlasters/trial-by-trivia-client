@@ -26,6 +26,10 @@ var app = app || {};
     }
 
     $(document).ready($('#quiz-list').on('click', '.question-answer', function() {
+    $('#quiz-list').on('click', '.question-answer', function() {
+      app.quizView.username = $('#user-name').val();
+
+    $(document).ready($('#quiz-list').on('click', '.question-answer', function() {
 
     $('#quiz-list').on('click', '.question-answer', function() {
       app.quizView.username = $('#user-name').val();
