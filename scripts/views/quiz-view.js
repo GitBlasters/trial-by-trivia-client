@@ -1,5 +1,3 @@
-'use strict';
-
 var app = app || {};
 
 (function(module) {
@@ -24,13 +22,6 @@ var app = app || {};
       app.User.create(newUser);
       app.User.fetchAll(() => app.scoreboardView.initScoreboardPage());
     }
-
-    $(document).ready($('#quiz-list').on('click', '.question-answer', function() {
-    $('#quiz-list').on('click', '.question-answer', function() {
-      app.quizView.username = $('#user-name').val();
-
-    $(document).ready($('#quiz-list').on('click', '.question-answer', function() {
-
     $('#quiz-list').on('click', '.question-answer', function() {
       app.quizView.username = $('#user-name').val();
       if ($(this).text() === app.Quiz.all[app.Quiz.currentQuestionIndex].correct_answer) {
@@ -42,7 +33,7 @@ var app = app || {};
         app.Quiz.currentQuestionIndex += 1;
         quizView.initQuizView();
       }
-    }))
+    })
   }
   module.quizView = quizView;
 })(app)
