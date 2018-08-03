@@ -87,8 +87,30 @@ section.home-view label {
 section.home-view button {
   display: block;
   margin: 10px auto;
-  padding: 7px;
-  width: 30%;
+  padding: 4px;
+  width: 18%;
+  background-color: #8C0004;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;;
+}
+
+.home-view button:hover {
+  background-color: white;
+  color: #8C0004;
+}
+
+@media (max-width: 590px) {
+  section.home-view button {
+    width: 25%;
+  }
+}
+
+@media (max-width: 400px) {
+  section.home-view button {
+    width: 40%;
+  }
 }
 
 
