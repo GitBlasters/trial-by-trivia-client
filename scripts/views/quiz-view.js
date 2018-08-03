@@ -18,7 +18,7 @@ var app = app || {};
       // app.scoreboardView.initScoreboardPage();
       app.User.fetchAll(() => app.scoreboardView.initScoreboardPage());
     }
-    $('#quiz-list').on('click', '.question-answer', function() {
+    $(document).ready($('#quiz-list').on('click', '.question-answer', function() {
       if ($(this).text() === app.Quiz.all[app.Quiz.currentQuestionIndex].correct_answer) {
         quizView.score += 1;
         $('.score').text(`Score: ${quizView.score}`);
@@ -28,7 +28,7 @@ var app = app || {};
         app.Quiz.currentQuestionIndex += 1;
         quizView.initQuizView();
       }
-    })
+    }))
   }
   module.quizView = quizView;
 })(app)
